@@ -13,7 +13,7 @@ RUN echo 'http://mirrors.aliyun.com/alpine/v3.4/community/'>/etc/apk/repositorie
         --with-freetype-dir=/usr/include/ \
         --with-png-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/ \
-    && docker-php-ext-install pdo pdo_mysql  \
+    && docker-php-ext-install pdo pdo_mysql bcmath \
     && pecl install xdebug-2.6.0 \
     && docker-php-ext-enable xdebug \
     && apk del tzdata \
