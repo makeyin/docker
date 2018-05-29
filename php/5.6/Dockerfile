@@ -14,6 +14,8 @@ RUN echo 'http://mirrors.aliyun.com/alpine/v3.4/community/'>/etc/apk/repositorie
         --with-png-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd pdo pdo_mysql gettext bcmath mcrypt \
+    && pecl install xdebug-2.6.0 \
+    && docker-php-ext-enable xdebug \
     && apk del tzdata \
     && rm -rf /var/cache/apk/* \
     && pecl install xdebug-2.3.3 mongo geoip memcache memcached-2.2.0 redis \
