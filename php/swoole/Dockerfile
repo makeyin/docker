@@ -20,7 +20,7 @@ RUN echo 'http://mirrors.aliyun.com/alpine/v3.6/community/'>/etc/apk/repositorie
         --with-png-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install bcmath \
-    && docker-php-ext-install json xml  phar opcache zip iconv  dom pcntl pdo_sqlite \
+    && docker-php-ext-install json xml  phar opcache zip iconv  dom pcntl \
     && pecl install swoole  \
     && docker-php-ext-enable swoole \
     && apk del tzdata \
