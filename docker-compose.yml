@@ -2,18 +2,22 @@ version: '2'
 
 services:
   nginx:
-    image: nginx:alpine
+    image: daocloud.io/library/nginx:1.13.0-alpine
     ports:
       - 80:80
+      - 9001:9001
     volumes:
       - ../:/working
       - ./nginx/vhost/:/etc/nginx/conf.d/
       - /tmp/:/logs/
     container_name: api.local.vpgame.cn
+    links :
+     - "docker_gitlab"
+     - "docker_jenkins"
     networks:
       - app
   php7:
-    build: 
+    build:
       context: .
       dockerfile: ./php/7.1/Dockerfile
     volumes:
@@ -22,7 +26,7 @@ services:
     networks:
       - app
   php5:
-    build: 
+    build:
       context: .
       dockerfile: ./php/5.6/Dockerfile
     volumes:
@@ -30,15 +34,54 @@ services:
       - ./php/5.6/php.ini:/usr/local/etc/php/php.ini
     networks:
       - app
-  swoole:
-    image: vpdocker_swoole:latest
-    ports:
-      - 9505:9505
+  docker_registry:
+    container_name: docker_registry
+    image: daocloud.io/library/registry:latest
     volumes:
-      - ../:/working
-    command: php /working/service/server.php
+    - ../data/registry:/tmp/registry
+    ports:
+    - 5000:5000
     networks:
-      - app
-
+    - app
+  docker_gitlab:
+    container_name: docker_gitlab
+    build:
+    context: .
+    dockerfile: gitlab/Dockerfile
+    volumes:
+    - ../data/gitlab/config:/etc/gitlab
+    - ../data/gitlab/logs:/var/log/gitlab
+    - ../data/gitlab/data:/var/opt/gitlab
+    hostname: docker.gitlab.com
+    ports:
+    - 443:443
+    - 22:22
+    networks:
+    - app
+    docker_jenkins:
+    container_name: docker_jenkins
+    build: 
+    context: .
+    dockerfile: jekins/Dockerfile
+    links:
+    - "docker_gitlab"
+    volumes:
+    - ../data/jenkins:/var/jenkins_home 
+    hostname: docker.jekins.com
+    ports:
+    - 8080:8080
+    networks:
+    - app
+# swoole:
+  #   build:
+  #     context: .
+  #     dockerfile: ./php/swoole/Dockerfile
+  #   ports:
+  #     - 9505:9505
+  #   volumes:
+  #     - ../:/working
+  #   command: php /working/service/server.php
+  #   networks: 
+  #     - app
 networks:
   app:

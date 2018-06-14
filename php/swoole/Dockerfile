@@ -1,5 +1,5 @@
 
-FROM php:7.2.6-cli-alpine3.6
+FROM registry.docker-cn.com/php:7.2.6-cli-alpine3.6
 MAINTAINER Gavin <acabin@live.com>
 
 
@@ -10,7 +10,7 @@ RUN echo 'http://mirrors.aliyun.com/alpine/v3.6/community/'>/etc/apk/repositorie
 	&& echo 'http://mirrors.aliyun.com/alpine/v3.6/main/'>>/etc/apk/repositories \
     && apk upgrade --update \ 
     # && apk add --no-cache $PHPIZE_DEPS \
-    && apk add --no-cache --virtual .phpize-deps $PHPIZE_DEPS linux-headers  \
+    && apk add --no-cache --virtual .phpize-deps linux-headers  \
     && apk add tzdata freetype libpng libjpeg-turbo freetype-dev postgresql-dev libpng-dev libjpeg-turbo-dev libxml2-dev libmcrypt libmcrypt-dev autoconf \
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \

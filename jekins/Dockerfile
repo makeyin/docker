@@ -1,0 +1,1 @@
+FROM hub-mirror.c.163.com/jenkins/jenkins:2.127-alpine
