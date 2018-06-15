@@ -1,4 +1,4 @@
-FROM php:5.6.35-fpm-alpine3.4
+FROM daocloud.io/library/php:5.6.35-fpm-alpine3.4
 
 WORKDIR /working
 
@@ -18,12 +18,12 @@ RUN echo 'http://mirrors.aliyun.com/alpine/v3.4/community/'>/etc/apk/repositorie
 #    && docker-php-ext-enable xdebug \
     && apk del tzdata \
     && rm -rf /var/cache/apk/* \
-    && pecl install xdebug-2.3.3 mongo geoip memcache memcached-2.2.0 redis \
+    && pecl install  mongo geoip memcache memcached-2.2.0 redis \
     && git clone --depth=1 "git://git.coding.net/yuhaibo/mirror-cphalcon.git" \
     && cd mirror-cphalcon/build/ \
     && ./install \
     && rm -rf /tmp/* \
-    && docker-php-ext-enable xdebug mongo geoip memcache memcached redis phalcon \
+    && docker-php-ext-enable mongo geoip memcache memcached redis phalcon \
     && cd /usr/share/GeoIP \
     && wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz \
     && gunzip GeoLiteCity.dat.gz \

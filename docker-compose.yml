@@ -1,6 +1,39 @@
 version: '2'
 
 services:
+  docker_registry:
+    image: daocloud.io/library/registry:latest
+    volumes:
+    - ../data/registry:/tmp/registry
+    ports:
+    - 5000:5000
+    networks:
+    - app
+  docker_gitlab:
+    build:
+      context: .
+      dockerfile: gitlab/Dockerfile
+    volumes:
+    - ../data/gitlab/config:/etc/gitlab
+    - ../data/gitlab/logs:/var/log/gitlab
+    - ../data/gitlab/data:/var/opt/gitlab
+    ports:
+    - 443:443
+    - 22:22
+    networks:
+    - app
+  docker_jenkins:
+    build: 
+      context: .
+      dockerfile: jekins/Dockerfile
+    links:
+    - "docker_gitlab"
+    volumes:
+    - ../data/jenkins:/var/jenkins_home 
+    ports:
+    - 8080:8080
+    networks:
+    - app
   nginx:
     image: daocloud.io/library/nginx:1.13.0-alpine
     ports:
@@ -34,44 +67,6 @@ services:
       - ./php/5.6/php.ini:/usr/local/etc/php/php.ini
     networks:
       - app
-  docker_registry:
-    container_name: docker_registry
-    image: daocloud.io/library/registry:latest
-    volumes:
-    - ../data/registry:/tmp/registry
-    ports:
-    - 5000:5000
-    networks:
-    - app
-  docker_gitlab:
-    container_name: docker_gitlab
-    build:
-    context: .
-    dockerfile: gitlab/Dockerfile
-    volumes:
-    - ../data/gitlab/config:/etc/gitlab
-    - ../data/gitlab/logs:/var/log/gitlab
-    - ../data/gitlab/data:/var/opt/gitlab
-    hostname: docker.gitlab.com
-    ports:
-    - 443:443
-    - 22:22
-    networks:
-    - app
-    docker_jenkins:
-    container_name: docker_jenkins
-    build: 
-    context: .
-    dockerfile: jekins/Dockerfile
-    links:
-    - "docker_gitlab"
-    volumes:
-    - ../data/jenkins:/var/jenkins_home 
-    hostname: docker.jekins.com
-    ports:
-    - 8080:8080
-    networks:
-    - app
 # swoole:
   #   build:
   #     context: .
