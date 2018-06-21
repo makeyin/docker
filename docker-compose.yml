@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   # docker_registry:
@@ -68,7 +68,7 @@ services:
       - ./php/5.6/php.ini:/usr/local/etc/php/php.ini
     networks:
       - app
-swoole:
+  swoole:
     build:
       context: .
       dockerfile: ./php/swoole/Dockerfile
@@ -76,8 +76,19 @@ swoole:
       - 9505:9505
     volumes:
       - ../:/working
-    command: php /working/service/server.php
+    command: php /working/server/server.php
     networks: 
       - app
+  swoft:
+    build:
+      context: .
+      dockerfile: ./php/swoft/Dockerfile
+    ports:
+      - 9505:9505
+    volumes:
+      - ../:/working
+    command: php /working/swoft/bin/swoft start
+    networks: 
+      - app    
 networks:
   app:
