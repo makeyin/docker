@@ -1,0 +1,136 @@
+/**
+ * 基于 Lumen 框架，内网环境的同步脚本
+ *
+ * 预设自定义变量
+ * baseHost 基础域名
+ * repositoryNamespace 仓库命名空间
+ * repositoryName 仓库名
+ * module 模块名
+ **/
+
+import groovy.json.JsonSlurper
+
+node('192.168.1.253') {
+
+  def repositorySshUrl = "git@git.vpgame.cn:${repositoryNamespace}/${repositoryName}.git"
+  def username = env.gitlabUserName ? env.gitlabUserName : 'admin'
+  def branchChoices = '';
+  def repositoryBranch = '';
+  def branches = []
+  def branchesWithoutSlash = []
+
+  stage '获取分支列表'
+  withCredentials([[$class: 'StringBinding', credentialsId: 'gitlab_api_token', variable: 'GITLAB_API_TOKEN']]) {
+    def response = httpRequest([url: "http://git.vpgame.cn/api/v3/projects/${repositoryNamespace}%2F${repositoryName}/repository/branches?private_token=${env.GITLAB_API_TOKEN}", contentType: 'APPLICATION_JSON'])
+    def branchObjs = parseJson(response.content)
+    for (def branchObj : branchObjs) {
+      branchChoices = branchChoices + branchObj.name + '\n'
+      branches.add(branchObj.name)
+    }
+
+    for (def branch : branches) {
+      branchesWithoutSlash.add(branch.replaceAll('/', '_'))
+    }
+  }
+
+  stage '选择分支'
+  if (!env.gitlabSourceBranch) {
+    repositoryBranch = input(message: '选择需要构建的分支', parameters: [[$class: 'ChoiceParameterDefinition', description: '分支列表', name: 'branch', choices: branchChoices]])
+  } else {
+    repositoryBranch = env.gitlabSourceBranch
+  }
+
+  repositoryBranchWithoutSlash = repositoryBranch.replaceAll('/', '_')
+  def branchHost = "${repositoryBranchWithoutSlash}.${baseHost}"
+  def containerName = "${module}.${branchHost}"
+
+  currentBuild.displayName = repositoryBranch + currentBuild.displayName // 重写 build 标题，加入分支
+  currentBuild.description = "分支: ${repositoryBranch}<br>提交者: ${username}<br>" // 重写 build 描述
+
+  stage '获取代码'
+  git([url: repositorySshUrl, branch: repositoryBranch, credentialsId: "gitlab"])
+
+  stage '获取 commit id'
+  sh "git rev-parse --short HEAD > .git/commit-id"
+  sh "git rev-parse --short HEAD > public/sss.html"
+  def commitId = readFile('.git/commit-id').trim()
+
+  stage '编译'
+  sh '/root/shell/zookeeper-to-json/convert.py 192.168.12.250 2181 /config > zookeeper-config.json'
+
+  sh 'docker run --rm -v $(pwd):/home -w /home php-composer:7.0.14-cli /bin/bash -c "composer config repo.packagist composer https://packagist.laravel-china.org && composer install --no-dev && composer run-script compile_develop_env"'
+
+  sh 'rm -f zookeeper-config.json'
+
+  stage '生成 Dockerfile'
+  def dockerfileContent = generateDockerfileContent()
+  sh "echo '${dockerfileContent}' > Dockerfile"
+
+  stage "制作镜像"
+  def imageName = "${repositoryNamespace}/${repositoryName}:${repositoryBranchWithoutSlash}-${commitId}"
+  docker.build imageName
+
+  stage "删除旧容器及旧镜像"
+  def removeContainerBash =
+  """
+  docker ps -a |
+  grep '${containerName}' |
+  awk '{print \$1}' |
+  xargs -i docker rm -f {}
+  """
+
+  def branchGrepString = branchesWithoutSlash.join('|')
+  def removeUnusedContainerBash =
+  """
+  docker ps |
+  grep "${repositoryNamespace}/${repositoryName}" |
+  grep -v -E '(${branchGrepString})' |
+  awk '{print \$1}' |
+  xargs -i docker stop {}
+  """
+
+  echo removeUnusedContainerBash
+
+  def removeImageBash =
+  """
+  docker images |
+  grep "${repositoryNamespace}/${repositoryName}" |
+  grep "${repositoryBranchWithoutSlash}" |
+  grep -v "${commitId}" |
+  awk '{print \$3}' |
+  xargs -i docker rmi {}
+  """
+
+  sh removeContainerBash
+  sh removeImageBash
+  sh returnStatus: true, script: removeUnusedContainerBash
+
+  stage "启动新镜像"
+  sh "docker run -v /opt/fpm_nginx_conf:/etc/nginx/conf.d --net='nginx' --name ${containerName} -e TZ=Asia/Shanghai -d $imageName"
+
+  stage '重载 nginx'
+  sh 'docker exec nginx service nginx reload'
+
+}
+
+def generateDockerfileContent() {
+
+  '''
+  FROM php-custom:7.0.14-fpm
+  COPY ./ /var/www/
+
+  WORKDIR /var/www/
+
+  RUN composer run-script --no-dev artisan_migrate
+
+  RUN chown -R www-data:www-data /var/www
+  RUN chmod -R 777 /var/www/storage
+  CMD supervisord -c /etc/supervisord.conf && composer run-script artisan_queue && nginx -c /etc/nginx/nginx.conf && php-fpm
+  '''
+
+}
+
+@NonCPS
+def parseJson(text) {
+  return new JsonSlurper().parseText(text)
+}

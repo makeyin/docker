@@ -1,1 +1,1 @@
-FROM registry.cn-hangzhou.aliyuncs.com/wangcong/gitlab-ce
+FROM gitlab/gitlab-ce:latest

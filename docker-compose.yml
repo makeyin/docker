@@ -1,39 +1,40 @@
 version: '2'
 
 services:
-  docker_registry:
-    image: daocloud.io/library/registry:latest
-    volumes:
-    - ../data/registry:/tmp/registry
-    ports:
-    - 5000:5000
-    networks:
-    - app
-  docker_gitlab:
-    build:
-      context: .
-      dockerfile: gitlab/Dockerfile
-    volumes:
-    - ../data/gitlab/config:/etc/gitlab
-    - ../data/gitlab/logs:/var/log/gitlab
-    - ../data/gitlab/data:/var/opt/gitlab
-    ports:
-    - 443:443
-    - 22:22
-    networks:
-    - app
-  docker_jenkins:
-    build: 
-      context: .
-      dockerfile: jekins/Dockerfile
-    links:
-    - "docker_gitlab"
-    volumes:
-    - ../data/jenkins:/var/jenkins_home 
-    ports:
-    - 8080:8080
-    networks:
-    - app
+  # docker_registry:
+  #   image: daocloud.io/library/registry:latest
+  #   volumes:
+  #   - ../data/registry:/tmp/registry
+  #   ports:
+  #   - 5000:5000
+  #   networks:
+  #   - app
+  # docker.gitlab.com:
+  #   build:
+  #     context: .
+  #     dockerfile: gitlab/Dockerfile
+  #   volumes:
+  #   - ../data/gitlab/config:/etc/gitlab
+  #   - ../data/gitlab/logs:/var/log/gitlab
+  #   - ../data/gitlab/data:/var/opt/gitlab
+  #   hostname: docker.gitlab.com
+  #   ports:
+  #   - 443:443
+  #   - 22:22
+  #   networks:
+  #   - app
+  # docker.jenkins.com:
+  #   build: 
+  #     context: .
+  #     dockerfile: jekins/Dockerfile
+  #   links:
+  #   - "docker.gitlab.com"
+  #   volumes:
+  #   - ../data/jenkins:/var/jenkins_home 
+  #   ports:
+  #   - 8080:8080
+  #   networks:
+  #   - app
   nginx:
     image: daocloud.io/library/nginx:1.13.0-alpine
     ports:
@@ -44,9 +45,9 @@ services:
       - ./nginx/vhost/:/etc/nginx/conf.d/
       - /tmp/:/logs/
     container_name: api.local.vpgame.cn
-    links :
-     - "docker_gitlab"
-     - "docker_jenkins"
+    # links :
+    #  - "docker.gitlab.com"
+    #  - "docker.jenkins.com"
     networks:
       - app
   php7:
@@ -67,16 +68,16 @@ services:
       - ./php/5.6/php.ini:/usr/local/etc/php/php.ini
     networks:
       - app
-# swoole:
-  #   build:
-  #     context: .
-  #     dockerfile: ./php/swoole/Dockerfile
-  #   ports:
-  #     - 9505:9505
-  #   volumes:
-  #     - ../:/working
-  #   command: php /working/service/server.php
-  #   networks: 
-  #     - app
+swoole:
+    build:
+      context: .
+      dockerfile: ./php/swoole/Dockerfile
+    ports:
+      - 9505:9505
+    volumes:
+      - ../:/working
+    command: php /working/service/server.php
+    networks: 
+      - app
 networks:
   app:
