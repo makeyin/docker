@@ -10,6 +10,8 @@ RUN echo 'http://mirrors.aliyun.com/alpine/v3.6/community/'>/etc/apk/repositorie
     && apk add --no-cache $PHPIZE_DEPS \
     && apk add --no-cache --virtual .phpize-deps linux-headers  \
     && apk add tzdata freetype libpng libjpeg-turbo freetype-dev postgresql-dev libpng-dev libjpeg-turbo-dev libxml2-dev libmcrypt libmcrypt-dev autoconf \
+    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && echo "Asia/Shanghai" > /etc/timezone \
     && docker-php-ext-configure gd \
         --with-gd \
         --with-freetype-dir=/usr/include/ \

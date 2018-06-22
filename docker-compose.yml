@@ -73,7 +73,7 @@ services:
       context: .
       dockerfile: ./php/swoole/Dockerfile
     ports:
-      - 9505:9505
+      - 9506:9506
     volumes:
       - ../:/working
     command: php /working/server/server.php

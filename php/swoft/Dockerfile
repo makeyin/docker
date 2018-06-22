@@ -1,68 +1,27 @@
-FROM php:7.1
 
-# Timezone
-RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
-    && echo 'Asia/Shanghai' > /etc/timezone
-
-# Libs
-RUN apt-get update \
-    && apt-get install -y \
-        curl \
-        wget \
-        git \
-        zip \
-        libz-dev \
-        libssl-dev \
-        libnghttp2-dev \
-        libpcre3-dev \
-    && apt-get clean \
-    && apt-get autoremove
-
-RUN curl -sS https://getcomposer.org/installer | php \
-    && mv composer.phar /usr/local/bin/composer \
-    && composer self-update --clean-backups
-
-# Redis extension
-RUN apt-get php-redis php-pdo php-bcmath \
-
-# # PDO extension
-# RUN docker-php-ext-install pdo_mysql
-
-# # Bcmath extension
-# RUN docker-php-ext-install bcmath
-
-# Hiredis
-RUN wget https://github.com/redis/hiredis/archive/v0.13.3.tar.gz -O hiredis.tar.gz \
-    && mkdir -p hiredis \
-    && tar -xf hiredis.tar.gz -C hiredis --strip-components=1 \
-    && rm hiredis.tar.gz \
-    && ( \
-        cd hiredis \
-        && make -j$(nproc) \
-        && make install \
-        && ldconfig \
-    ) \
-    && rm -r hiredis
-
-# Swoole extension
-RUN wget https://github.com/swoole/swoole-src/archive/v4.0.0.tar.gz -O swoole.tar.gz \
-    && mkdir -p swoole \
-    && tar -xf swoole.tar.gz -C swoole --strip-components=1 \
-    && rm swoole.tar.gz \
-    && ( \
-        cd swoole \
-        && phpize \
-        && ./configure --enable-async-redis --enable-mysqlnd --enable-coroutine --enable-openssl --enable-http2 \
-        && make -j$(nproc) \
-        && make install \
-    ) \
-    && rm -r swoole \
-    && docker-php-ext-enable swoole
+FROM php:7.2.6-cli-alpine3.6
 
 
 WORKDIR /working
 
-RUN composer install --no-dev \
-    && composer dump-autoload -o \
-    && composer clearcache
-
+RUN echo 'http://mirrors.aliyun.com/alpine/v3.6/community/'>/etc/apk/repositories \
+	&& echo 'http://mirrors.aliyun.com/alpine/v3.6/main/'>>/etc/apk/repositories \
+    && apk upgrade --update \ 
+    && apk add --no-cache $PHPIZE_DEPS \
+    && apk add --no-cache --virtual .phpize-deps linux-headers  \
+    && apk add tzdata freetype libpng libjpeg-turbo freetype-dev postgresql-dev libpng-dev libjpeg-turbo-dev libxml2-dev libmcrypt libmcrypt-dev autoconf \
+    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && echo "Asia/Shanghai" > /etc/timezone \
+    && docker-php-ext-configure gd \
+        --with-gd \
+        --with-freetype-dir=/usr/include/ \
+        --with-png-dir=/usr/include/ \
+        --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-install bcmath \
+    && docker-php-ext-install json xml  phar opcache zip iconv  dom pcntl \
+    && pecl install swoole  \
+    && docker-php-ext-enable swoole \
+    && apk del tzdata \
+    && apk del .phpize-deps \
+    && rm -rf /var/cache/apk/* \
+    && rm -rf /tmp/* 

@@ -1,0 +1,9 @@
+ALTER TABLE `diamond`.`convert_order_extend` 
+MODIFY COLUMN `diamond` int(11) UNSIGNED NOT NULL AFTER `item_id`;
+
+ALTER TABLE `diamond`.`diamond_recharge` 
+MODIFY COLUMN `diamond` int(11) UNSIGNED NULL DEFAULT NULL AFTER `status`;
+
+ALTER TABLE `diamond`.`convert_order_extend` 
+DROP INDEX `ITEM_IDX`,
+ADD INDEX `ITEM_IDX`(`item_id`, `user_id`, `status`) USING BTREE;
