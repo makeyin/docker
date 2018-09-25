@@ -12,7 +12,7 @@ import groovy.json.JsonSlurper
 
 node('192.168.1.253') {
 
-  def repositorySshUrl = "git@git.vpgame.cn:${repositoryNamespace}/${repositoryName}.git"
+  def repositorySshUrl = "git@git.docekr.cn:${repositoryNamespace}/${repositoryName}.git"
   def username = env.gitlabUserName ? env.gitlabUserName : 'admin'
   def branchChoices = '';
   def repositoryBranch = '';
@@ -21,7 +21,7 @@ node('192.168.1.253') {
 
   stage '获取分支列表'
   withCredentials([[$class: 'StringBinding', credentialsId: 'gitlab_api_token', variable: 'GITLAB_API_TOKEN']]) {
-    def response = httpRequest([url: "http://git.vpgame.cn/api/v3/projects/${repositoryNamespace}%2F${repositoryName}/repository/branches?private_token=${env.GITLAB_API_TOKEN}", contentType: 'APPLICATION_JSON'])
+    def response = httpRequest([url: "http://git.docekr.cn/api/v3/projects/${repositoryNamespace}%2F${repositoryName}/repository/branches?private_token=${env.GITLAB_API_TOKEN}", contentType: 'APPLICATION_JSON'])
     def branchObjs = parseJson(response.content)
     for (def branchObj : branchObjs) {
       branchChoices = branchChoices + branchObj.name + '\n'
