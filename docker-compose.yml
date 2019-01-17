@@ -68,27 +68,52 @@ services:
       - ./php/5.6/php.ini:/usr/local/etc/php/php.ini
     networks:
       - app
-  swoole:
-    build:
-      context: .
-      dockerfile: ./php/swoole/Dockerfile
+ mysql:
+    image: daocloud.io/library/mysql:5.7.4
     ports:
-      - 9506:9506
+     - 3306:3306
     volumes:
-      - ../:/working
-    command: php /working/server/server.php
-    networks: 
+     -  ~/Documents/mysql:/var/lib/mysql
+     -  ./mysql/my.cnf:/usr/local/etc/my.cnf
+     -  ./mysql/net-tools-1.60:/tmp/net-tools-1.60
+    container_name: mysql
+    environment :
+      MYSQL_ROOT_PASSWORD : root
+    networks:
       - app
-  swoft:
+  sqladvisor:
     build:
       context: .
-      dockerfile: ./php/swoft/Dockerfile
+      dockerfile: ./sqladvisor/Dockerfile
     ports:
-      - 9505:9505
+      - 8001:80
     volumes:
-      - ../:/working
-    command: php /working/swoft/bin/swoft start
-    networks: 
-      - app    
+    - ./sqladvisor/web:/root/web
+    container_name: sqladvisor
+    command: apt-get install nginx
+    networks:
+      - app
+#  swoole:
+#    build:
+#      context: .
+#      dockerfile: ./php/swoole/Dockerfile
+#    ports:
+#      - 9506:9506
+#    volumes:
+#      - ../:/working
+#    command: php /working/server/server.php
+#    networks:
+#      - app
+#  swoft:
+#    build:
+#      context: .
+#      dockerfile: ./php/swoft/Dockerfile
+#    ports:
+#      - 9505:9505
+#    volumes:
+#      - ../:/working
+#    command: php /working/swoft/bin/swoft start
+#    networks:
+#      - app
 networks:
   app:

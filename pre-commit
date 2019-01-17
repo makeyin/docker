@@ -1,0 +1,69 @@
+#!/bin/bash
+#
+# check PHP code syntax error and standard with phpcs
+# author : star[github.com/star1989]
+# date : 2017-02-24
+export PATH=/usr/local/bin:$PATH
+DOCKER_PHPCSMD="192.168.12.253:5000/php-cs-md"
+PROJECT=$(git rev-parse --show-toplevel)
+cd $PROJECT
+SFILES=$(git diff --cached --name-only --diff-filter=ACMR HEAD | grep \\.php)
+TMP_DIR=$PROJECT."/tmp"
+
+# Determine if a file list is passed
+if [ "$#" -ne 0 ]
+then
+    exit 0
+fi
+echo "Checking PHP Lint..."
+for FILE in $SFILES
+do
+#    echo "php -l -d display_errors=0 ${FILE}"
+#	echo "git show :$FILE > $TMP_DIR/$FILE"
+    php -l -d display_errors=0 $FILE
+    if [ $? != 0  ]
+    then
+        echo "Fix the error before commit."
+        exit 1
+    fi
+    FILES="$FILES $PROJECT/$FILE"
+done
+
+echo "Checkout report dir..."
+if [ -d report ]
+then
+    echo "Delete report dir"
+    rm -rf report
+fi
+if [ ! -d report ]
+then
+    echo "Create report dir"
+    mkdir report
+fi
+
+
+if [ "$FILES" != ""  ]
+then
+    echo "Running Code Sniffer & MD..."
+
+    TMP_DIR=/tmp/$(uuidgen)
+    mkdir -p $TMP_DIR
+    for FILE in $SFILES
+    do
+        mkdir -p $TMP_DIR/$(dirname $FILE)
+        git show :$FILE > $TMP_DIR/$FILE
+        docker run -v $PROJECT:$PROJECT --rm $DOCKER_PHPCSMD php-cs-fixer fix  $PROJECT/$FILE
+        docker run -v $PROJECT:$PROJECT --rm $DOCKER_PHPCSMD phpmd $PROJECT/$FILE html cleancode,codesize,design,naming,unusedcode,controversial --suffixes php --ignore-violations-on-exit >> $PROJECT/report/md.html
+    done
+    #phpcs --standard=PSR2 --encoding=utf-8 -n $TMP_DIR > $PROJECT/report/standard.txt
+    #PHPCS_ERROR=$?
+    rm -rf $TMP_DIR
+    #if [ $PHPCS_ERROR != 0  ]
+    #then
+    #    #echo "Fix the error before commit."
+    #    echo "Please look reports.Then fix the errors"
+    #    exit 1
+    #fi
+fi
+
+exit $?
