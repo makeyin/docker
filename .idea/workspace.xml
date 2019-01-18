@@ -2,8 +2,675 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="371423a9-437b-47d4-b28e-b6aabbad6476" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/php-cs-md/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/SQLAdvisor-master.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/CHANGES" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/CHANGES.ru" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/README" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/acc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/bcc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/ccc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/clang" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/gcc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/icc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/msvc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/name" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/owc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/cc/sunc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/define" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/endianness" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/feature" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/have" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/have_headers" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/headers" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/include" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/init" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/install" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/geoip/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/google-perftools/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/libatomic/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/libatomic/make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/libgd/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/libxslt/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/md5/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/md5/make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/md5/makefile.bcc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/md5/makefile.msvc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/md5/makefile.owc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/openssl/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/openssl/make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/openssl/makefile.bcc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/openssl/makefile.msvc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/pcre/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/pcre/make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/pcre/makefile.bcc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/pcre/makefile.msvc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/pcre/makefile.owc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/perl/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/perl/make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/sha1/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/sha1/make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/sha1/makefile.bcc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/sha1/makefile.msvc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/sha1/makefile.owc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/test" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/zlib/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/zlib/make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/zlib/makefile.bcc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/zlib/makefile.msvc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/lib/zlib/makefile.owc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/module" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/modules" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/nohave" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/options" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/os/conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/os/darwin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/os/freebsd" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/os/linux" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/os/solaris" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/os/win32" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/sources" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/stubs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/summary" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/threads" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/types/sizeof" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/types/typedef" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/types/uintptr_t" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/types/value" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/auto/unix" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/conf/fastcgi.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/conf/fastcgi_params" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/conf/koi-utf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/conf/koi-win" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/conf/mime.types" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/conf/nginx.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/conf/scgi_params" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/conf/uwsgi_params" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/conf/win-utf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/configure" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/contrib/README" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/contrib/geo2nginx.pl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/contrib/unicode2nginx/koi-utf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/contrib/unicode2nginx/unicode-to-nginx.pl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/contrib/unicode2nginx/win-utf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/contrib/vim/ftdetect/nginx.vim" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/contrib/vim/indent/nginx.vim" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/contrib/vim/syntax/nginx.vim" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/html/50x.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/html/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/man/nginx.8" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/nginx.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/nginx.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_array.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_array.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_buf.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_buf.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_conf_file.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_conf_file.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_connection.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_connection.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_core.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_cpuinfo.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_crc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_crc32.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_crc32.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_crypt.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_crypt.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_cycle.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_cycle.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_file.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_file.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_hash.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_hash.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_inet.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_inet.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_list.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_list.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_log.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_log.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_md5.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_md5.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_murmurhash.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_murmurhash.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_open_file_cache.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_open_file_cache.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_output_chain.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_palloc.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_palloc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_parse.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_parse.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_parse_time.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_parse_time.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_proxy_protocol.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_proxy_protocol.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_queue.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_queue.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_radix_tree.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_radix_tree.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_rbtree.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_rbtree.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_regex.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_regex.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_resolver.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_resolver.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_rwlock.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_rwlock.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_sha1.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_shmtx.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_shmtx.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_slab.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_slab.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_spinlock.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_string.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_string.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_syslog.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_syslog.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_thread_pool.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_thread_pool.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_times.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/core/ngx_times.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/modules/ngx_devpoll_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/modules/ngx_epoll_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/modules/ngx_eventport_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/modules/ngx_kqueue_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/modules/ngx_poll_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/modules/ngx_select_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/modules/ngx_win32_select_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_accept.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_connect.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_connect.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_openssl.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_openssl.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_openssl_stapling.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_pipe.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_pipe.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_posted.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_posted.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_timer.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/event/ngx_event_timer.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_access_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_addition_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_auth_basic_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_auth_request_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_autoindex_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_browser_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_charset_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_chunked_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_dav_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_degradation_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_empty_gif_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_fastcgi_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_flv_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_geo_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_geoip_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_gunzip_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_gzip_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_gzip_static_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_headers_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_image_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_index_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_limit_conn_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_limit_req_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_log_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_map_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_memcached_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_mp4_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_not_modified_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_proxy_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_random_index_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_range_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_realip_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_referer_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_rewrite_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_scgi_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_secure_link_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_slice_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_split_clients_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_ssi_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_ssi_filter_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_ssl_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_ssl_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_static_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_stub_status_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_sub_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_upstream_hash_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_upstream_ip_hash_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_upstream_keepalive_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_upstream_least_conn_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_upstream_zone_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_userid_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_uwsgi_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/ngx_http_xslt_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/perl/Makefile.PL" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/perl/nginx.pm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/perl/nginx.xs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/perl/ngx_http_perl_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/perl/ngx_http_perl_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/modules/perl/typemap" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_cache.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_copy_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_core_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_core_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_file_cache.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_header_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_parse.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_postpone_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_request.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_request.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_request_body.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_script.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_script.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_special_response.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_upstream.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_upstream.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_upstream_round_robin.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_upstream_round_robin.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_variables.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_variables.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/ngx_http_write_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/v2/ngx_http_v2.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/v2/ngx_http_v2.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/v2/ngx_http_v2_filter_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/v2/ngx_http_v2_huff_decode.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/v2/ngx_http_v2_huff_encode.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/v2/ngx_http_v2_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/v2/ngx_http_v2_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/http/v2/ngx_http_v2_table.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_auth_http_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_core_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_handler.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_imap_handler.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_imap_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_imap_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_parse.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_pop3_handler.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_pop3_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_pop3_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_proxy_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_smtp_handler.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_smtp_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_smtp_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_ssl_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/mail/ngx_mail_ssl_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/misc/ngx_cpp_test_module.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/misc/ngx_google_perftools_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_alloc.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_alloc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_atomic.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_channel.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_channel.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_daemon.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_darwin.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_darwin_config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_darwin_init.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_darwin_sendfile_chain.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_dlopen.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_dlopen.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_errno.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_errno.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_file_aio_read.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_files.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_files.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_freebsd.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_freebsd_config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_freebsd_init.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_freebsd_sendfile_chain.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_gcc_atomic_amd64.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_gcc_atomic_ppc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_gcc_atomic_sparc64.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_gcc_atomic_x86.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_linux.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_linux_aio_read.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_linux_config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_linux_init.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_linux_sendfile_chain.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_os.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_posix_config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_posix_init.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_process.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_process.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_process_cycle.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_process_cycle.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_readv_chain.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_recv.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_send.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_setaffinity.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_setaffinity.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_setproctitle.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_setproctitle.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_shmem.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_shmem.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_socket.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_socket.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_solaris.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_solaris_config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_solaris_init.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_solaris_sendfilev_chain.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_sunpro_amd64.il" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_sunpro_atomic_sparc64.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_sunpro_sparc64.il" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_sunpro_x86.il" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_thread.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_thread_cond.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_thread_id.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_thread_mutex.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_time.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_time.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_udp_recv.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_udp_send.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_user.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_user.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/os/unix/ngx_writev_chain.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_access_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_core_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_handler.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_limit_conn_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_proxy_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_ssl_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_ssl_module.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_upstream.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_upstream.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_upstream_hash_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_upstream_least_conn_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_upstream_round_robin.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_upstream_round_robin.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/nginx-1.11.1/src/stream/ngx_stream_upstream_zone_module.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/percona-release-0.1-3.noarch.rpm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/bin/perror" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/atomic/gcc_builtins.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/atomic/generic-msvc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/atomic/nolock.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/atomic/rwlock.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/atomic/solaris.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/base64.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/big_endian.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/byte_order_generic.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/byte_order_generic_x86.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/byte_order_generic_x86_64.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/crypt_genhash_impl.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/decimal.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/errmsg.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/ft_global.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/hash.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/heap.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/lf.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/little_endian.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/m_ctype.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/m_string.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_aes.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_alarm.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_alloc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_atomic.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_attribute.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_base.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_bit.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_bitmap.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_byteorder.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_check_opt.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_compare.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_compiler.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_dbug.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_default.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_dir.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_getopt.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_global.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_libwrap.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_list.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_md5.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_murmur3.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_net.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_nosys.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_pthread.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_rdtsc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_rnd.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_stacktrace.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_sys.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_time.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_timer.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_tree.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_uctype.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_user.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/my_xml.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/myisampack.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/client_authentication.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/client_plugin.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/client_plugin.h.pp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/get_password.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/innodb_priv.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/plugin.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/plugin_audit.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/plugin_audit.h.pp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/plugin_auth.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/plugin_auth.h.pp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/plugin_auth_common.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/plugin_ftparser.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/plugin_ftparser.h.pp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/plugin_validate_password.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/psi/mysql_file.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/psi/mysql_idle.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/psi/mysql_socket.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/psi/mysql_stage.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/psi/mysql_statement.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/psi/mysql_table.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/psi/mysql_thread.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/psi/psi.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/service_my_plugin_log.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/service_my_snprintf.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/service_mysql_string.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/service_thd_alloc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/service_thread_scheduler.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql/services.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql_com.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql_com_server.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql_embed.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql_time.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysql_version.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysqld_ername.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysqld_error.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/mysys_err.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/password.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/probes_mysql.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/probes_mysql_nodtrace.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/queues.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/regex/cclass.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/regex/cname.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/regex/my_regex.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/regex/regex2.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/regex/tests_include.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/regex/utils.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/service_versions.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sha1.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sha2.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/bounded_queue.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/client_settings.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/custom_conf.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/delayable_insert_operation.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/derror.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/discover.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/dynamic_ids.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/event_parse_data.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/gcalc_slicescan.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/global_threads.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/gstream.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/handler.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/hash_filo.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/init.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_cmpfunc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_create.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_func.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_geofunc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_inetfunc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_row.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_strfunc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_subselect.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_sum.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_timefunc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/item_xmlfunc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/key.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/lex.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/lex_hash.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/lex_symbol.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/log.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/mem_root_array.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/merge_sort.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/message.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/my_decimal.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/mysqld.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/mysqld_suffix.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/nt_servc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/opt_explain.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/opt_explain_format.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/opt_explain_json.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/opt_explain_traditional.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/parse_file.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/partition_element.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/partition_info.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/procedure.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/query_strip_comments.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/records.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/set_var.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sp.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sp_head.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sp_instr.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sp_pcontext.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/spatial.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_acl.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_admin.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_alloc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_alter.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_analyse.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_array.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_base.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_bitmap.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_bootstrap.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_callback.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_class.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_cmd.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_const.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_crypt.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_cursor.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_data_change.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_db.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_delete.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_derived.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_do.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_error.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_get_diagnostics.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_handler.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_help.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_hset.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_insert.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_lex.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_list.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_load.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_locale.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_parse.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_parse_index.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_partition.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_partition_admin.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_plist.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_plugin.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_plugin_services.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_prepare.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_priv.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_profile.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_reload.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_rename.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_resolver.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_rewrite.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_servers.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_show.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_signal.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_sort.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_string.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_table.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_tablespace.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_test.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_time.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_timer.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_trigger.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_truncate.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_udf.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_update.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_view.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sql_yacc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/strfunc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/string_service.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/structs.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sys_vars.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/sys_vars_shared.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/table.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/table_id.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/thr_malloc.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/tzfile.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql/unireg.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql_common.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sql_state.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sslopt-case.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sslopt-longopts.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/sslopt-vars.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/t_ctype.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/thr_alarm.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/thr_lock.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/typelib.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/violite.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/waiting_threads.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/include/welcome_copyright_notice.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/lib/libsqlparser-debug.so" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/Index.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/README" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/armscii8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/ascii.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/cp1250.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/cp1251.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/cp1256.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/cp1257.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/cp850.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/cp852.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/cp866.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/dec8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/geostd8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/greek.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/hebrew.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/hp8.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/keybcs2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/koi8r.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/koi8u.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/latin1.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/latin2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/latin5.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/latin7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/macce.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/macroman.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/charsets/swe7.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/dictionary.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/english/errmsg.sys" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sqladvisor/sqlparser/share/errmsg-utf8.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
+      <change beforePath="$PROJECT_DIR$/pre-commit" afterPath="$PROJECT_DIR$/pre-commit" />
+      <change beforePath="$PROJECT_DIR$/sqladvisor/Dockerfile" afterPath="$PROJECT_DIR$/sqladvisor/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/sqladvisor/step.sh" afterPath="$PROJECT_DIR$/sqladvisor/step.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,34 +681,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="1275">
               <caret line="75" column="25" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="25" />
-              <folding>
-                <marker date="1547728889262" expanded="true" signature="14:2548" ph="services: &lt;5 keys&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2102:2322" ph="swoole: &lt;5 keys&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2115:2182" ph="build: &lt;2 keys&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2159:2182" ph="./php/swo…Dockerfile" />
-                <marker date="1547728889262" expanded="true" signature="2188:2213" ph="ports: &lt;1 item&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2204:2213" ph="9506:9506" />
-                <marker date="1547728889262" expanded="true" signature="2219:2249" ph="volumes: &lt;1 item&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2237:2249" ph="../:/working" />
-                <marker date="1547728889262" expanded="true" signature="2264:2294" ph="php /work…server.php" />
-                <marker date="1547728889262" expanded="true" signature="2300:2322" ph="networks: &lt;1 item&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2319:2322" ph="app" />
-                <marker date="1547728889262" expanded="true" signature="2326:2548" ph="swoft: &lt;5 keys&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2338:2404" ph="build: &lt;2 keys&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2382:2404" ph="./php/swo…Dockerfile" />
-                <marker date="1547728889262" expanded="true" signature="2410:2435" ph="ports: &lt;1 item&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2426:2435" ph="9505:9505" />
-                <marker date="1547728889262" expanded="true" signature="2441:2471" ph="volumes: &lt;1 item&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2459:2471" ph="../:/working" />
-                <marker date="1547728889262" expanded="true" signature="2486:2520" ph="php /work…woft start" />
-                <marker date="1547728889262" expanded="true" signature="2526:2548" ph="networks: &lt;1 item&gt;" />
-                <marker date="1547728889262" expanded="true" signature="2545:2548" ph="app" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pre-commit" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pre-commit">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="55" column="214" lean-forward="false" selection-start-line="55" selection-start-column="127" selection-end-line="55" selection-end-column="214" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php-cs-md/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqladvisor/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sqladvisor/step.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,6 +736,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>volumes</find>
+      <find>DOCKER_PHPCSMD</find>
+      <find>$PROJECT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -61,6 +748,9 @@
       <list>
         <option value="$PROJECT_DIR$/php/swoole/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/pre-commit" />
+        <option value="$PROJECT_DIR$/sqladvisor/Dockerfile" />
+        <option value="$PROJECT_DIR$/sqladvisor/step.sh" />
       </list>
     </option>
   </component>
@@ -72,7 +762,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="670" />
+    <option name="y" value="151" />
     <option name="width" value="1920" />
     <option name="height" value="977" />
   </component>
@@ -91,7 +782,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -100,16 +790,43 @@
               <item name="docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php-cs-md" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sqladvisor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sqladvisor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -138,18 +855,19 @@
       <updated>1528421185544</updated>
       <workItem from="1528421187349" duration="3576000" />
       <workItem from="1528681035613" duration="599000" />
-      <workItem from="1547728760935" duration="121000" />
+      <workItem from="1547728760935" duration="2111000" />
+      <workItem from="1547796102252" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4296000" />
+    <option name="totallyTimeSpent" value="6325000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="977" extended-state="0" />
+    <frame x="670" y="151" width="1920" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2550586" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1256656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -157,7 +875,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26190478" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20181406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -180,35 +898,77 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="25" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre-commit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="214" lean-forward="false" selection-start-line="55" selection-start-column="127" selection-end-line="55" selection-end-column="214" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-cs-md/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqladvisor/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/swoole/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/php/7.1/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="1275">
           <caret line="75" column="25" lean-forward="false" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="25" />
-          <folding>
-            <marker date="1547728889262" expanded="true" signature="14:2548" ph="services: &lt;5 keys&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2102:2322" ph="swoole: &lt;5 keys&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2115:2182" ph="build: &lt;2 keys&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2159:2182" ph="./php/swo…Dockerfile" />
-            <marker date="1547728889262" expanded="true" signature="2188:2213" ph="ports: &lt;1 item&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2204:2213" ph="9506:9506" />
-            <marker date="1547728889262" expanded="true" signature="2219:2249" ph="volumes: &lt;1 item&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2237:2249" ph="../:/working" />
-            <marker date="1547728889262" expanded="true" signature="2264:2294" ph="php /work…server.php" />
-            <marker date="1547728889262" expanded="true" signature="2300:2322" ph="networks: &lt;1 item&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2319:2322" ph="app" />
-            <marker date="1547728889262" expanded="true" signature="2326:2548" ph="swoft: &lt;5 keys&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2338:2404" ph="build: &lt;2 keys&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2382:2404" ph="./php/swo…Dockerfile" />
-            <marker date="1547728889262" expanded="true" signature="2410:2435" ph="ports: &lt;1 item&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2426:2435" ph="9505:9505" />
-            <marker date="1547728889262" expanded="true" signature="2441:2471" ph="volumes: &lt;1 item&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2459:2471" ph="../:/working" />
-            <marker date="1547728889262" expanded="true" signature="2486:2520" ph="php /work…woft start" />
-            <marker date="1547728889262" expanded="true" signature="2526:2548" ph="networks: &lt;1 item&gt;" />
-            <marker date="1547728889262" expanded="true" signature="2545:2548" ph="app" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre-commit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="214" lean-forward="false" selection-start-line="55" selection-start-column="127" selection-end-line="55" selection-end-column="214" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php-cs-md/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqladvisor/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqladvisor/step.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
