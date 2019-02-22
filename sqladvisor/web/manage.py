@@ -1,6 +1,6 @@
 #-*- coding=utf-8 -*-
 import os
-from app import create_app, db
+from app import create_app, ph
 from app.models import User, DatabaseInfo, Analysis
 from flask_script import Manager, Shell
 from flask_migrate import Migrate, MigrateCommand

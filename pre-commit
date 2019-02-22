@@ -67,13 +67,3 @@ then
 fi
 
 exit $?
-
-
-#!/bin/sh
-commit=`sh ~/Documents/work/shell/php-cs.sh`
-if [ -n "$commit" ]
-then
-    echo  "代码进行了格式化，请重新提交一次"
-    exit 1
-fi
-exit 0

@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 80:80
+    volumes:
+      - ~/Documents/work/:/working
+      - ./nginx/vhost/:/etc/nginx/conf.d/
+      - /tmp/:/logs/
+    container_name: api.local.vpgame.cn
+    networks:
+      - app
+  
+  php70:
+    build: 
+      context: .
+      dockerfile: ./php/7.0/Dockerfile
+    volumes:
+      - ~/Documents/work/:/working
+      - ./php/7.0/php.ini:/usr/local/etc/php/php.ini
+    container_name: vp_php70
+    networks:
+      - app
+
+  php71:
+    build: 
+      context: .
+      dockerfile: ./php/7.1/Dockerfile
+    volumes:
+      - ~/Documents/work/:/working
+      - ./php/7.1/php.ini:/usr/local/etc/php/php.ini
+    networks:
+      - app
+    container_name: vp_php71
+  php5:
+    build: 
+      context: .
+      dockerfile: ./php/5.4/Dockerfile
+    volumes:
+      - ~/Documents/work/:/working
+      - ./php/5.4/php.ini:/usr/local/etc/php/php.ini
+    container_name: vp_php54
+    networks:
+      - app
+
+networks:
+  app:
