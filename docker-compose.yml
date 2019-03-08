@@ -29,7 +29,6 @@ services:
     container_name: vp_php70
     networks:
       - app
-
   php71:
     image: 192.168.12.253:5000/php71
     volumes:
@@ -52,25 +51,13 @@ services:
      - 3306:3306
     volumes:
      -  ~/Documents/mysql:/var/lib/mysql
-     -  ./mysql/my.cnf:/usr/local/etc/my.cnf
+     -  ./mysql/my.cnf:/usr/local/mysql/my.cnf
      -  ./mysql/net-tools-1.60:/tmp/net-tools-1.60
     container_name: mysql
     environment :
       MYSQL_ROOT_PASSWORD : root
     networks:
       - app
-  # sqladvisor:
-  #   image: sqladvisor
-  #   ports:
-  #     - 8009:80
-  #     - 5000:5000
-  #   volumes:
-  #   - ./sqladvisor/web:/root/web
-  #   - ./sqladvisor/step.sh:/tmp/step.sh
-  #   container_name: sqladvisor
-  #   command:  ["nginx", "-g", "daemon off;"]
-  #   networks:
-  #     - app
   portainer:
     image: portainer/portainer
     ports:
@@ -80,6 +67,7 @@ services:
     container_name: prtainer
     networks:
       - app
+
   # php7.0代码静态检查/代码美化
   # php7CSMD:
   #   image: 192.168.12.253:5000/php-cs-md
