@@ -20,29 +20,22 @@ services:
           - webapi.local.vpgame.cn
           - admin.local.vpgame.cn
           - passport.local.vpgame.cn
-
   php70:
-    image: 192.168.12.253:5000/php70
+    build:
+      context: .
+      dockerfile: ./php/7.0/Dockerfile
     volumes:
       - ~/Documents/work/:/working
       - ./php/7.0/php.ini:/usr/local/etc/php/php.ini
-    container_name: vp_php70
+    container_name: php70
     networks:
       - app
-  php71:
-    image: 192.168.12.253:5000/php71
-    volumes:
-      - ~/Documents/work/:/working
-      - ./php/7.1/php.ini:/usr/local/etc/php/php.ini
-    networks:
-      - app
-    container_name: vp_php71
   php5:
-    image: 192.168.12.253:5000/php54
+    image: php5.4-fpm:latest
     volumes:
       - ~/Documents/work/:/working
       - ./php/5.4/php.ini:/usr/local/etc/php/php.ini
-    container_name: vp_php54
+    container_name: php54
     networks:
       - app
   mysql:
@@ -67,13 +60,60 @@ services:
     container_name: prtainer
     networks:
       - app
-
-  # php7.0代码静态检查/代码美化
-  # php7CSMD:
-  #   image: 192.168.12.253:5000/php-cs-md
+  node:
+    tty: true # Enables debugging capabilities when attached to this container.
+    image: 'bitnami/node:latest'
+    container_name: nodejs
+    labels:
+      kompose.service.type: nodeport
+    # command: sh -c 'npm install && npm start'
+    ports:
+      - 3000:3000
+    volumes:
+      - ./nodejs:/app
+    networks:
+      - app
+  # gitlab:
+  #   build:
+  #     context: .
+  #     dockerfile: ./gitlab/Dockerfile
+  #   container_name: gitlab
   #   volumes:
-  #     - ~/Documents/work/:/working
-  #   container_name: vp_php_cs_md
-
+  #     - ./data/gitlab/config:/etc/gitlab
+  #     - ./data/gitlab/logs:/var/log/gitlab
+  #     - ./data/gitlab/data:/var/opt/gitlab
+  #   ports:
+  #     - 443:443
+  #     - 22:22
+  #     - 82:80
+  #   networks:
+  #     app:
+  #       aliases:
+  #           - dome.gitlab.cn
+  # jenkins:
+  #     build: 
+  #       context: .
+  #       dockerfile: ./jekins/Dockerfile
+  #     container_name: jenkins
+  #     volumes:
+  #         - ./data/jenkins:/var/jenkins_home 
+  #     ports:
+  #       - 8081:8080
+  #     networks:
+  #        app:
+  #         aliases:
+  #           - dome.jenkin.cn
+  soar:
+      build: 
+        context: .
+        dockerfile: ./soar-web/Dockerfile
+      container_name: soar-web
+     # volumes:
+      ports:
+        - 5077:5077
+      networks:
+        app:
+          aliases:
+              - dome.5077.cn
 networks:
   app:
