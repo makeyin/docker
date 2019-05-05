@@ -24,9 +24,10 @@ services:
     build:
       context: .
       dockerfile: ./php/7.0/Dockerfile
+    #image: k8s/php7
     volumes:
       - ~/Documents/work/:/working
-      - ./php/7.0/php.ini:/usr/local/etc/php/php.ini
+      - ./php/7.0/php.ini:/etc/php/php.ini
     container_name: php70
     networks:
       - app
@@ -60,17 +61,28 @@ services:
     container_name: prtainer
     networks:
       - app
-  node:
-    tty: true # Enables debugging capabilities when attached to this container.
-    image: 'bitnami/node:latest'
-    container_name: nodejs
-    labels:
-      kompose.service.type: nodeport
-    # command: sh -c 'npm install && npm start'
+  # node:
+  #   tty: true # Enables debugging capabilities when attached to this container.
+  #   image: 'bitnami/node:latest'
+  #   container_name: nodejs
+  #   labels:
+  #     kompose.service.type: nodeport
+  #   # command: sh -c 'npm install && npm start'
+  #   ports:
+  #     - 3001:3001
+  #   volumes:
+  #     - ./nodejs:/app
+  #   networks:
+  #     - app
+  goproxy:
+    image: goproxy/goproxy
     ports:
-      - 3000:3000
+      - 8081:8081
+    command: "goproxy -listen=0.0.0.0:8081 -cacheDir=/ext"
+    container_name: goproxy
+    restart: always
     volumes:
-      - ./nodejs:/app
+    - ~/Documents/data/goproxy/cacheDir:/ext
     networks:
       - app
   # gitlab:
@@ -103,17 +115,29 @@ services:
   #        app:
   #         aliases:
   #           - dome.jenkin.cn
-  soar:
-      build: 
-        context: .
-        dockerfile: ./soar-web/Dockerfile
-      container_name: soar-web
-     # volumes:
-      ports:
-        - 5077:5077
-      networks:
-        app:
-          aliases:
-              - dome.5077.cn
+  registry:
+   image: registry:latest
+   container_name: registry
+   volumes:
+    - ~/Documents/data/registry:/var/lib/registry
+   restart: always
+   ports:
+     - 5000:5000
+   networks:
+     - app
+  # soar:
+  #     build: 
+  #       context: .
+  #       dockerfile: ./soar-web/Dockerfile
+  #     container_name: soar-web
+  #     ports:
+  #       - 5077:5077
+  #     networks:
+  #       app:
+  #         aliases:
+  #             - dome.5077.cn
 networks:
   app:
+
+
+

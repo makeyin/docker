@@ -19,6 +19,11 @@ RUN echo 'http://mirrors.aliyun.com/alpine/v3.7/community/'>/etc/apk/repositorie
     && ./configure --with-php-config=/usr/local/bin/php-config --with-libzookeeper-dir=/usr/local/zookeeper   \
     && make    \
     && make install \
+    && php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
+    && php composer-setup.php \
+    && php -r "unlink('composer-setup.php');" \
+    && mv composer.phar /usr/local/bin/composer \
+    && composer config -g repo.packagist composer https://packagist.phpcomposer.com\
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && docker-php-ext-configure gd \
@@ -26,9 +31,9 @@ RUN echo 'http://mirrors.aliyun.com/alpine/v3.7/community/'>/etc/apk/repositorie
         --with-freetype-dir=/usr/include/ \
         --with-png-dir=/usr/include/ \
         --with-jpeg-dir=/usr/include/ \
-    && docker-php-ext-install pdo pdo_mysql bcmath \
-    && pecl install xdebug-2.6.0 \
-    && docker-php-ext-enable xdebug zookeeper \
+    && docker-php-ext-install pdo pdo_mysql bcmath \ 
+    && pecl install xdebug-2.6.0 apcu  \
+    && docker-php-ext-enable xdebug zookeeper apcu \
     && apk del tzdata \
     && rm -rf /var/cache/apk/* \
     && rm -rf /tmp/* \
