@@ -9,7 +9,7 @@ services:
       - ~/Documents/work/:/working
       - ./nginx/vhost/:/etc/nginx/conf.d/
       - /tmp/:/logs/
-    container_name: api.local.vpgame.cn
+    container_name: api
     networks:
       - app
   
