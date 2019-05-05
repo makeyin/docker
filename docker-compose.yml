@@ -13,14 +13,6 @@ services:
     networks:
       app:
         aliases:
-          - api.local.vpgame.cn
-          - api71.local.vpgame.cn
-          - www.local.vpgame.cn
-          - yii-webapi.local.vpgame.cn
-          - webapi.local.vpgame.cn
-          - admin.local.vpgame.cn
-          - passport.local.vpgame.cn
-  php70:
     build:
       context: .
       dockerfile: ./php/7.0/Dockerfile
