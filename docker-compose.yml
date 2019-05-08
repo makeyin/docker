@@ -1,5 +1,4 @@
 version: '3'
-
 services:
   nginx:
     image: nginx:alpine
@@ -9,10 +8,10 @@ services:
       - ~/Documents/work/:/working
       - ./nginx/vhost/:/etc/nginx/conf.d/
       - /tmp/:/logs/
-    container_name: vp_nginx
+    container_name: nginx
     networks:
-      app:
-        aliases:
+      - app
+  php70:
     build:
       context: .
       dockerfile: ./php/7.0/Dockerfile
@@ -51,30 +50,6 @@ services:
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock 
     container_name: prtainer
-    networks:
-      - app
-  # node:
-  #   tty: true # Enables debugging capabilities when attached to this container.
-  #   image: 'bitnami/node:latest'
-  #   container_name: nodejs
-  #   labels:
-  #     kompose.service.type: nodeport
-  #   # command: sh -c 'npm install && npm start'
-  #   ports:
-  #     - 3001:3001
-  #   volumes:
-  #     - ./nodejs:/app
-  #   networks:
-  #     - app
-  goproxy:
-    image: goproxy/goproxy
-    ports:
-      - 8081:8081
-    command: "goproxy -listen=0.0.0.0:8081 -cacheDir=/ext"
-    container_name: goproxy
-    restart: always
-    volumes:
-    - ~/Documents/data/goproxy/cacheDir:/ext
     networks:
       - app
   # gitlab:
